@@ -533,7 +533,7 @@ function InitTabSlide(){
 		document.body.style.height = '98.5%';
 		$( config.Screen.id ).classList.remove( 'modeplan');
 		// Hide header when first and last slide displaying
-		//if( current === 0 || current === TabSlide.length - 1 ) $( config.Banner.id ).style.top = '-10000px';
+		if( current === 0 || current === TabSlide.length - 1 ) $( config.Banner.id ).style.top = '-10000px';
 		//Animation play
 		wow();
 	}
@@ -566,10 +566,10 @@ function GotoNext(){
 		SetAdaptive();
 		// Hide header on first and last slide
 		if( current === 0 || current === TabSlide.length - 1 ){
-			//$( config.Banner.id ).style.top = '-100000px';
+			$( config.Banner.id ).style.top = '-100000px';
 		}
 		else{
-			//$( config.Banner.id ).style.top = '4px';
+			$( config.Banner.id ).style.top = '4px';
 		}
 		wow();
 		$( config.SlideCounter.idCurrent ).firstChild.nodeValue = current+1;
@@ -602,10 +602,10 @@ function GotoPrev(){
 		SetAdaptive();
 		// Hide header on first and last slide
 		if( current === 0 || current === TabSlide.length-1 ){
-			//$( config.Banner.id ).style.top = '-1000000px';
+			$( config.Banner.id ).style.top = '-1000000px';
 		}
 		else{
-			//$( config.Banner.id ).style.top = '4px';
+			$( config.Banner.id ).style.top = '4px';
 		}
 		wow();
 		$( config.SlideCounter.idCurrent ).firstChild.nodeValue = current+1;
@@ -635,10 +635,10 @@ function GotoSlide(){
 		SetAdaptive();
 		// Hide header on first and last slide
 		if( current === 0 || current === TabSlide.length-1 ){
-			//$( config.Banner.id ).style.top = '-100000px';
+			$( config.Banner.id ).style.top = '-100000px';
 		}
 		else{
-			//$( config.Banner.id ).style.top = '4px';
+			$( config.Banner.id ).style.top = '4px';
 		}
 		wow();
 		$( config.SlideCounter.idCurrent ).firstChild.nodeValue = current+1;
@@ -749,8 +749,8 @@ function Toc(){
 	$( config.Summary.id ).appendChild( Ctitle );
 	//Set summary list
 	for( var i = 0; i < TabSlide.length; i++ ){
-		Target = TabSlide[i].querySelector( 'h2' ) || TabSlide[i].querySelector( 'h1' ) || TabSlide[i].querySelector( 'h3' );
-		//Target = TabSlide[i].firstElementChild;
+		//Target = TabSlide[i].querySelector( 'h2' );
+		Target = TabSlide[i].firstElementChild;
 		if( Target ){
 			Txt[i] = Target.innerText || Target.textContent;
 		}

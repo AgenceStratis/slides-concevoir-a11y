@@ -239,15 +239,24 @@ td {
 /** @subsection 2.1 HEADINGS **/
 
 h2 {
-	margin-bottom: 0;
-	padding: 0.1em;
-	border-left: 5px solid #ca3432;
+	color: #000;
+	margin-bottom: 1.5em; /*border-left: 5px solid var(--theme);*/
 	-moz-font-feature-settings: "c2sc";
 	font-feature-settings: "c2sc";
 	font-variant: small-caps;
-	line-height: 1.1em;
-	background: #F9F9F9;
+	line-height: 1.1em; /*background: var(--backg-alt);*/
 	font-family: 'os-bold';
+	position: relative;
+}
+
+h2::after {
+	content: "";
+	position: absolute;
+	bottom: -0.5em;
+	left: 0;
+	width: 2em;
+	height: 0.2em;
+	background: #ca3432;
 }
 
 .couv h2,
@@ -259,11 +268,8 @@ h2 {
 }
 
 h3 {
-	padding: 0 5px 5px 5px;
-	margin: 0;
-	border-top: 2px solid #ca3432;
-	background: #666;
-	color: #fff;
+	margin: 1.3em 0 0.5em;
+	color: #000;
 	-moz-font-feature-settings: "c2sc";
 	font-feature-settings: "c2sc";
 	font-variant: small-caps;
@@ -333,27 +339,21 @@ q {
 	margin: 0.5em 0;
 }
 
-.slide .small {
-	font-size: 70%;
-	font-weight: normal;
-}
+/*.slide .small {*/
 
-.slide .tiny {
-	font-size: 50%;
-	font-weight: normal;
-}
+/*    font-size: 70%;*/
 
-.slide .middle {
-	font-size: 80%;
-	font-weight: normal;
-}
+/*    font-weight: normal;*/
 
-.slide .small *,
-.slide .middle *,
-.slide .tiny * {
-	font-size: 100%;
-	font-weight: normal;
-}
+/*}*/
+
+/*.slide .small * {*/
+
+/*    font-size: 100%;*/
+
+/*    font-weight: normal;*/
+
+/*}*/
 
 /**
  * -------------------------
@@ -630,19 +630,26 @@ button.disc1:focus {
 	padding: 1rem;
 }
 
+.showalt {
+	position: relative;
+	display: inline-block;
+}
+
+.showalt::after {
+	content: attr(data-alt);
+	border: 1px solid red;
+	position: absolute;
+	top: 50%;
+	right: 100%;
+}
+
 @media screen and (min-width: 48em) {
 
-h2 {
-	float: left;
-	margin-bottom: 0.5em;
+h2 { /*float: left;*/
 }
 
 h2 + * {
 	clear: both;
-}
-
-h3 { /*float: left;*/
-	margin-bottom: 1em;
 }
 
 h3 + * {
@@ -651,33 +658,14 @@ h3 + * {
 
 .col-left {
 	float: left;
-}
-
-.col-right {
-	float: right;
-}
-
-.col-left,
-.col-right {
 	width: 50%;
-}
-
-.col-left {
 	padding: 0 5% 0 0;
 }
 
 .col-right {
+	float: right;
+	width: 50%;
 	padding: 0 0 0 5%;
-}
-
-.col-left.col-left--tiny,
-.col-right.col-right--tiny {
-	width: 33%;
-}
-
-.col-left.col-left--big,
-.col-right.col-right--big {
-	width: 66%;
 }
 
 .list-disc li {

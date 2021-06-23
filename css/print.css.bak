@@ -37,8 +37,15 @@ body{
 	padding:1cm;
 	opacity:1;
 	position:relative;
-	min-height:20em;
+	/*min-height:20em;*/
 	display:block!important;
+}
+
+#wrapper {
+	font-size: 160%;
+	height: auto;
+	width: auto;
+	position: static;
 }
 
 .modeplan .slide,
@@ -107,7 +114,7 @@ h2{
 
 h3{
 	padding:0;
-	font-size:12pt;
+	/*font-size:12pt;*/
 	font-weight:bold;
 }
 
@@ -117,7 +124,7 @@ h3{
 }
 
 h1.main-title{
-	font-size:12pt;
+	/*font-size:12pt;*/
 	font-family:sans-serif;
 	position:fixed;
 	right:0;

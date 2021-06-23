@@ -199,29 +199,19 @@ th, td {
 /** @subsection 2.1 HEADINGS **/
 
 h2 {
-    color: var(--font);
-    margin-bottom: 1.5em;
-    /*border-left: 5px solid var(--theme);*/
+    margin-bottom: 0;
+    padding: 0.1em;
+    border-left: 5px solid var(--theme);
     font-variant: small-caps;
     line-height: 1.1em;
-    /*background: var(--backg-alt);*/
+    background: var(--backg-alt);
     font-family: 'os-bold';
-    position: relative;
 }
-h2::after {
-    content: "";
-    position: absolute;
-    bottom: -0.5em;
-    left: 0;
-    width: 2em;
-    height: 0.2em;
-    background: var(--theme);
-}
-
 
 @media (--medium) {
     h2 {
-        /*float: left;*/
+        float: left;
+        margin-bottom: 0.5em;
     }
 
     h2 + * {
@@ -237,8 +227,11 @@ h2::after {
 }
 
 h3 {
-    margin: 1.3em 0 0.5em;
-    color: var(--font);
+    padding: 0 5px 5px 5px;
+    margin: 0;
+    border-top: 2px solid var(--theme);
+    background: var(--backg);
+    color: var(--font-alt);
     font-variant: small-caps;
     font-weight: normal;
     font-family: 'os-regular';
@@ -246,7 +239,8 @@ h3 {
 
 @media (--medium) {
     h3 {
-
+        /*float: left;*/
+        margin-bottom: 1em;
     }
 
     h3 + * {
@@ -315,15 +309,25 @@ q {
     margin: 0.5em 0;
 }
 
-/*.slide .small {*/
-/*    font-size: 70%;*/
-/*    font-weight: normal;*/
-/*}*/
+.slide .small {
+    font-size: 70%;
+    font-weight: normal;
+}
 
-/*.slide .small * {*/
-/*    font-size: 100%;*/
-/*    font-weight: normal;*/
-/*}*/
+.slide .tiny {
+    font-size: 50%;
+    font-weight: normal;
+}
+
+.slide .middle {
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.slide .small *, .slide .middle *, .slide .tiny * {
+    font-size: 100%;
+    font-weight: normal;
+}
 
 /**
  * -------------------------
@@ -501,14 +505,30 @@ q {
 @media (--medium) {
     .col-left {
         float: left;
-        width: 50%;
-        padding: 0 5% 0 0;
     }
 
     .col-right {
         float: right;
+    }
+
+    .col-left, .col-right {
         width: 50%;
+    }
+
+    .col-left {
+        padding: 0 5% 0 0;
+    }
+
+    .col-right {
         padding: 0 0 0 5%;
+    }
+
+    .col-left.col-left--tiny, .col-right.col-right--tiny {
+        width: 33%;
+    }
+
+    .col-left.col-left--big, .col-right.col-right--big {
+        width: 66%;
     }
 }
 
