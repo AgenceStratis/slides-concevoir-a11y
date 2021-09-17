@@ -613,10 +613,10 @@ img.center {
 /*  SLIDE SIMPLE */
 .slide-simple {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 50px 2rem;
     width: 70%;
     max-width: 1080px;
     margin: 0 auto;

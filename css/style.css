@@ -862,12 +862,12 @@ img.center {
 .slide-simple {
 	display: -ms-flexbox;
 	display: flex;
-	height: 100vh;
+	min-height: 100vh;
 	-ms-flex-pack: center;
 	justify-content: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 2rem;
+	padding: 2rem 2rem 50px 2rem;
 	width: 70%;
 	max-width: 1080px;
 	margin: 0 auto;

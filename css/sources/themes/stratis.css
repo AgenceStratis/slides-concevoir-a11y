@@ -198,6 +198,13 @@ th, td {
 
 /** @subsection 2.1 HEADINGS **/
 
+div h2:first-child,
+div h3:first-child,
+div h4:first-child,
+div h5:first-child {
+    margin-top: 0;
+}
+
 h2 {
     color: var(--font);
     margin-bottom: 1.5em;
@@ -313,6 +320,10 @@ q {
 
 .slide li {
     margin: 0.5em 0;
+}
+
+.slide ol.list-alpha {
+    list-style-type: upper-alpha;
 }
 
 /*.slide .small {*/
@@ -651,9 +662,17 @@ button.disc1:focus {
     }
 }
 
+.slide .float-wrapper {
+    overflow: hidden;
+}
+
 .slide .left {
     float: left;
     margin: 0 2rem 2rem 0;
+}
+
+.slide .img-block {
+    display: block;
 }
 
 /**
@@ -666,6 +685,10 @@ button.disc1:focus {
     background: var(--backg-alt);
     font-family: 'os-bold';
     padding: 1rem;
+}
+
+.slide .encadre.--light {
+    font-family: 'os-light';
 }
 
 .showalt {
