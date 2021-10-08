@@ -696,9 +696,24 @@ button.disc1:focus {
     display: inline-block;
 }
 .showalt::after {
-    content: attr(data-alt);
+    content: 'Alternative : ' attr(data-alt);
     border: 1px solid red;
     position: absolute;
     top: 50%;
     right: 100%;
+    width: 150px;
+}
+
+.noperceptible-link {
+    text-decoration: none;
+    color: #565656;
+}
+
+.perceptible-link {
+    text-decoration: none;
+    color: #ca3432;
+}
+
+.perceptible-link:hover, .perceptible-link:focus {
+    text-decoration: underline;
 }

@@ -1254,6 +1254,7 @@ Ceci est la suite.</code></pre>
 							<p>Afin de <strong>créer une relation entre les en-têtes et les cellules</strong>, il est nécessaire de configurer correctement les en-têtes.</p>
 							<p>La plupart des CMS et des éditeurs de texte riches vous permettent de configurer <strong>uniquement des tableaux de données simples</strong>.</p>
 							<p>La configuration se fait au niveau des paramètres globaux du tableau. Il vous est généralement demandé de paramétrer les en-têtes.</p>
+							<p><a href="https://ckeditor.com/ckeditor-4/demo/#article">Démonstration dans l'éditeur de texte riche</a>.</p>
 						</div>
 						<div class="slide-double--right">
 							<p class="center"><img src="img_slide/table-2.png" alt=""></p>
@@ -1380,7 +1381,7 @@ Ceci est la suite.</code></pre>
 					<div class="slide-simple">
 						<div class="slide-simple--wrapper">
 							<h2>Liens - Un intitulé obligatoire</h2>
-							<p>Un lien doit toujours avoir un intitulé visible, c’est-à-dire un contenu entre <a> et </a>.</p>
+							<p>Un lien doit toujours avoir un intitulé visible, c’est-à-dire un contenu entre <code>&lt;a&gt;</code> et <code>&lt;/a&gt;</code>.</p>
 							<p class="encadre">À noter : les ancres ne sont pas concernées.</p>
 						</div>
 					</div>
@@ -1435,6 +1436,20 @@ Ceci est la suite.</code></pre>
 									<img src="img_slide/lien-4.png" alt="Pacte pour l'enfance" ><br>Pacte pour l'enfance
 								</a>
 							</p>
+							<p class="Cmasque">Solution : Supprimer l'alternative de l'image qui provoque une redondance d'information.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="slide">
+					<div class="slide-simple">
+						<div class="slide-simple--wrapper">
+							<h2>Liens - Exercice 3</h2>
+							<p>Le lien ci-après est-il explicite ?</p>
+							<p class="center small">
+								<a href="https://www.un.org/fr/udhrbook/pdf/udhr_booklet_fr_web.pdf">Déclaration universelle des droits de l'homme</a> PDF 60Ko
+							</p>
+							<p class="Cmasque">Solution : Oui le lien est explicite car le format et le poids du fichier se trouvent dans son contexte. Il est préférable de réaliser un lien hors contexte en intégrant le format et le poids dans le lien.</p>
 						</div>
 					</div>
 				</section>
@@ -1752,6 +1767,54 @@ Ceci est la suite.</code></pre>
 						<div class="slide-simple--wrapper">
 							<h2>Exercice</h2>
 							<p><a href="exercice-1.htm">Corriger la sémantique de ce contenu</a>.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="slide">
+					<div class="slide-simple">
+						<div class="slide-simple--wrapper">
+							<h2>Liens qui ne sont pas perceptibles - Critère</h2>
+							<ul>
+								<li>Critère 10.6. Dans chaque page web, chaque lien dont la nature n’est pas évidente est-il visible par rapport au texte environnant ?</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="slide">
+					<div class="slide-simple">
+						<div class="slide-simple--wrapper">
+							<h2>Liens qui ne sont pas perceptibles - Enjeu pour l'utilisateur</h2>
+							<p>Les personnes malvoyantes peuvent ne pas percevoir les liens qui ne sont pas discernables du reste du texte dans lequel ils sont insérés.</p>
+							<h3>Exemple non conforme</h3>
+							<p>Depuis le <a href="https://fr.wikipedia.org/wiki/Conf%C3%A9rence_des_Nations_unies_sur_l%27environnement_et_le_d%C3%A9veloppement" class="noperceptible-link">sommet de la Terre de Rio de Janeiro</a> en 1992, la préservation de la biodiversité est considérée comme un des enjeux essentiels du développement durable.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="slide">
+					<div class="slide-simple">
+						<div class="slide-simple--wrapper">
+							<h2>Liens qui ne sont pas perceptibles</h2>
+							<p>Les liens signalés uniquement par la couleur doivent satisfaire ces conditions :</p>
+							<ul>
+								<li>La couleur du lien a un rapport de contraste supérieur à 3:1 par rapport au texte environnant.</li>
+								<li>Le lien dispose d’une indication visuelle au survol et à la prise de focus autre qu’un changement de couleur.</li>
+							</ul>
+							<p class="encadre">Conseil : les liens et uniquement les liens devrait toujours être soulignés.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="slide">
+					<div class="slide-simple">
+						<div class="slide-simple--wrapper">
+							<h2>Liens qui ne sont pas perceptibles - Exemples conformes</h2>
+							<ul>
+								<li><p>La Bretagne est une entité géographique et culturelle, et une des <a href="https://fr.wikipedia.org/wiki/Pays_celtiques" class="perceptible-link">nations dites celtiques</a>.</p></li>
+								<li><p>La permaculture est un concept systémique et global qui vise à créer des écosystèmes respectant la <a href="https://fr.wikipedia.org/wiki/Biodiversit%C3%A9">biodiversité</a>.</p></li>
+							</ul>
 						</div>
 					</div>
 				</section>
