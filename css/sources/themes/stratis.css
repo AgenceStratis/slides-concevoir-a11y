@@ -267,7 +267,7 @@ h4, h5, h6 {
 
 
 dl {
-    margin: 2em 0;
+    margin: .2em 0 .5em;
     padding: 0;
     font-family: georgia, times, serif;
 }
@@ -276,13 +276,13 @@ dt {
     position: relative;
     left: 0;
     top: 1.1em;
-    width: 3.5em;
+    width: 30%;
     font-weight: bold;
 }
 
 dd {
     border-left: 1px solid #000;
-    margin: 0 0 0 4.5em;
+    margin: 0 0 0 35%;
     padding: 0 0 .5em .5em;
 }
 
