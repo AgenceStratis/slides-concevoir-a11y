@@ -420,7 +420,7 @@ q {
 
 .slide-simple,
 .slide-double {
-	padding-top: 3.5rem;
+	padding: 3.5rem 2rem;
 }
 
 .slide-counter-current {
@@ -581,6 +581,8 @@ button.disc1:focus {
 	font-size: 1.5em;
 	-moz-font-feature-settings: "c2sc";
 	font-feature-settings: "c2sc";
+	-moz-font-feature-settings: "c2sc";
+	font-feature-settings: "c2sc";
 	font-variant: small-caps;
 }
 
@@ -630,10 +632,6 @@ button.disc1:focus {
 
 .slide img.margin-big {
 	margin: 2rem 0;
-}
-
-.slide .float-wrapper {
-	overflow: hidden;
 }
 
 .slide .left {
