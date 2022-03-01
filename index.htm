@@ -170,18 +170,6 @@
                 <header class="main-header clearfix">
                     <h1 class="main-title">Les images</h1>
                 </header>
-                <div class="slide-simple">
-                    <div class="slide-simple--wrapper">
-                        <h2>Les images de décoration</h2>
-                        <p class="center">Image qui n'apporte pas d'information<br>=<br>alternative vide</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="slide">
-                <header class="main-header clearfix">
-                    <h1 class="main-title">Les images</h1>
-                </header>
                 <div class="slide-double">
                     <div class="slide-double--left">
                         <h2>Les images de décoration</h2>
@@ -363,7 +351,8 @@
                         <figure role="figure"
                                 aria-label="Bel orage dans la baie de Saint-Tropez – Jean-Baptiste Bellet">
                             <img src="img_slide/jaffa.png" alt="" class="img-block">
-                            <figcaption>L'artiste, Antoine-Jean Gros, représente un épisode de la campagne d'Égypte.</figcaption>
+                            <figcaption>L'artiste, Antoine-Jean Gros, représente un épisode de la campagne d'Égypte.
+                            </figcaption>
                         </figure>
                     </div>
                     <div class="slide-double--right">
@@ -1472,18 +1461,23 @@ Ceci est la suite.</code></pre>
                             <li>Narration qui permet de comprendre les informations véhiculées par l'image (ambiance,
                                 décors, personnages, actions).
                             </li>
+                            <li>Audiodescription = jeu d'acteur + création</li>
+                            <li>Ne pas audiodécrire s'il y a trop de bruit (musique, ambiance, long discours sans
+                                pause…).
+                            </li>
                         </ul>
                         <p><a href="https://www.youtube.com/watch?v=9z76HXZQ2o0" target="_blank">Exemple
                             d'audiodescription</a></p>
-                        <p>C'est un jeu d'acteur.</p>
-                        <p>Audiodescription = création</p>
                         <p>
                             <a href="https://www.csa.fr/Media/Files/Espace-Juridique/Chartes/Charte-de-l-audiodescription"
                                target="_blank">Charte de l'audiodescription</a>.</p>
-                        <p>Pas d'intégration technique possible native aux navigateurs pour le moment. Proposer deux
-                            vidéos, avec et sans audiodescription.</p>
-                        <p>Ne pas audiodécrire s'il y a trop de bruit (musique, ambiance, long discours sans
-                            pause…).</p>
+                        <div class="encadre --light">
+                            <p>Pas d'intégration technique possible native aux navigateurs pour le moment. 2 solutions&nbsp;:</p>
+                            <ul>
+                                <li>Proposer deux vidéos, avec et sans audiodescription.</li>
+                                <li>Mettre en place un lecteur vidéo capable de gérer l'audiodescription.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -2838,7 +2832,7 @@ Ceci est la suite.</code></pre>
                 </header>
                 <div class="slide-simple">
                     <div class="slide-simple--wrapper">
-                        <h2>Regrouper les champs</h2>
+                        <h1>Regrouper les champs</h1>
                         <h2>Les critères du RGAA</h2>
                         <ul>
                             <li>Critère 11.5. Dans chaque formulaire, les champs de même nature sont-ils regroupés, si
@@ -2992,6 +2986,37 @@ Ceci est la suite.</code></pre>
                 <div class="slide-simple">
                     <div class="slide-simple--wrapper">
                         <h2>Enjeu pour l'utilisateur</h2>
+                        <p>Les personnes ayant un <strong>handicap mental</strong> peuvent ne pas pouvoir remplir un
+                            champ de formulaire
+                            <strong>si le format attendu n’est pas précisé</strong>.</p>
+                        <p><strong>Tous les utilisateurs</strong> pourraient être dans l’incapacité de soumettre un
+                            formulaire
+                            <strong>lorsque
+                                les champs à caractère obligatoire ne sont pas indiqués</strong>.</p>
+                        <p><strong>Les aveugles et malvoyants qui utilisent un lecteur d’écran ou une loupe</strong>
+                            pourraient
+                            rencontrer des difficultés majeures <strong>si les messages d’erreur ne sont pas
+                                vocalisés</strong> à la
+                            soumission du formulaire, <strong>ou si ces messages d’erreur ne sont pas correctement liés
+                                aux
+                                champs correspondants</strong>.</p>
+                        <p>Les personnes ayant un <strong>handicap mental et/ou moteur</strong> peuvent passer beaucoup
+                            de temps, voir
+                            abandonner la saisie des champs d’un formulaire <strong>si leurs données utilisateur
+                                préalablement
+                                enregistrées ne sont pas suggérées</strong>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide">
+                <header class="main-header clearfix">
+                    <h1 class="main-title">Formulaires > Aide à la saisie</h1>
+                </header>
+                <div class="slide-simple">
+                    <div class="slide-simple--wrapper">
+                        <h2>Instructions d’aide à la saisie</h2>
                         <p>Pour <strong>les champs texte sans masque de saisie</strong>, il est utile d'ajouter une
                             <strong>instruction d'aide de saisie dans l'étiquette du champ</strong>.</p>
                         <p>Ces aides de saisie permettent aux utilisateurs de <strong>savoir comment renseigner le champ
@@ -3007,10 +3032,36 @@ Ceci est la suite.</code></pre>
                             <li>Les champs texte « Adresse Web ». Il est nécessaire d'ajouter le format attendu «
                                 Adresse Web (www.site.com) ».
                             </li>
+                            <li>Les champs d’envoi de fichiers. Il est nécessaire d’indiquer le type et le poids maximal
+                                autorisé.
+                            </li>
                             <li>Les champs texte demandant uniquement des chiffres, des lettres, sans caractères
                                 spéciaux... Il est nécessaire d'ajouter le format attendu et le nombre de caractères.
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="slide">
+                <header class="main-header clearfix">
+                    <h1 class="main-title">Formulaires > Aide à la saisie</h1>
+                </header>
+                <div class="slide-double">
+                    <div class="slide-double--left">
+                        <h2>Suggestion de données utilisateur</h2>
+                        <p>Suggestion de remplissage automatique des données utilisateur :
+                            <strong>l'autocompletion</strong>.</p>
+                        <p>Nom, prénom, adresse, téléphone, courriel, identifiant/mot de passe...</p>
+                        <p>Pour <strong>éviter que le navigateur ne devine quelle information suggérer et insère des
+                            données invalides</strong>, la <strong>donnée attendue peut être précisée</strong> (attribut
+                            <code class="nohighlight">autocomplete</code>).</p>
+                        <p class="encadre">Les CMS ne proposent pas tous cette option, mais elle peut parfois être
+                            développée.</p>
+                    </div>
+                    <div class="slide-double--right">
+                        <p class="center"><img src="img_slide/autocomplete-drupal.jpg"
+                                               alt="Exemple de définition de l'autocompletion dans Drupal"></p>
                     </div>
                 </div>
             </section>
@@ -3086,6 +3137,14 @@ Ceci est la suite.</code></pre>
                                             <li>😥 de la situation actuelle.</li>
                                         </ul>
                                     </li>
+                                    <li>Ne pas remplacer de mots par des émojis.</li>
+                                    <li>Placer les émojis plutôt à la fin, l'information doit venir en premier (alerte,
+                                        annonce...).
+                                    </li>
+                                    <li>Éviter les émojis au milieu des phrases, ou pire, au milieu des mots !</li>
+                                    <li>Utiliser des émojis connus.</li>
+                                    <li>Éviter les émoticônes, du type :)</li>
+                                    <li>Attention aux contrastes.</li>
                                 </ul>
                             </li>
                         </ul>
