@@ -1252,35 +1252,15 @@
                             <li>Par exemple, sur un appareil tactile, les infobulles ne s'affichent pas.</li>
                             <li>À la prise de focus, l'infobulle n'apparaît pas.</li>
                         </ul>
-                        <p><strong>Si vous ajoutez une infobulle, toujours ajouter l'intitulé du lien dans
-                            l'infobulle</strong>.</p>
+                        <p>Pour des raisons de support (selon la configuration des aides techniques), <strong>si vous
+                            ajoutez une infobulle, elle doit toujours contenir, au minimum, l'intitulé visible du
+                            lien.</strong>.</p>
                         <pre><code class="html">&lt;a href=&quot;https://www.site.fr/contact&quot; title=&quot;Contactez-nous par courriel&quot;&gt;Contactez-nous&lt;/a&gt;</code></pre>
-                        <p><a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">Démo sur le site de
+                        <p><a rel="noreferrer noopener" href="https://www.gouvernement.fr/info-coronavirus"
+                              target="_blank"
+                              title="Démo sur le site de l'info COVID du gouvernement (lien externe, nouvelle fenêtre)">Démo
+                            sur le site de
                             l'info COVID du gouvernement</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="slide">
-                <header class="main-header clearfix">
-                    <h1 class="main-title">Les liens</h1>
-                </header>
-                <div class="slide-simple">
-                    <div class="slide-simple--wrapper">
-                        <h2>L'infobulle sur un lien</h2>
-                        <p>L'intitulé d'un lien doit toujours être explicite, <strong>l'infobulle par exemple ne permet
-                            pas de rendre un lien explicite</strong>, ce n'est qu'une description du lien et non son nom
-                            accessible.</p>
-                        <p>Par exemple un lien s'ouvrant dans une nouvelle fenêtre est un changement de contexte, il est
-                            nécessaire de prévenir l'utilisateur.</p>
-                        <div class="encadre">
-                            <p><a href="https://www.numerique.gouv.fr" target="_blank">Direction interministérielle du
-                                numérique (nouvelle fenêtre)</a></p>
-                            <p><a href="https://www.numerique.gouv.fr" target="_blank">Direction interministérielle du
-                                numérique <span class="far fa-window-restore" aria-hidden="true"
-                                                title="nouvelle fenêtre"></span><span
-                                        class="sr-only">(nouvelle fenêtre)</span></a></p>
-                        </div>
                         <p><a href="exercices/test-ckeditor.html" target="_blank">Démonstration dans l'éditeur de texte
                             riche</a>.</p>
                     </div>
