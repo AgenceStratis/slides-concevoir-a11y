@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests Unicode</title>
+</head>
+<body style="max-width: 1500px; font-size: 200%;">
+    <h1 class="heading">Page de test sur le détournement de caractères Unicode</h1>
+    
+    <section>
+        <h2 class="heading">Test 1 : les caractères fantaisistes</h2>
+        <section>
+            <h3 class="heading">Phrase en français</h3>
+            <p>Quand j'écris du texte avec des caractères fantaisistes, 
+j'écris du texte totalement inaccessible pour les personnes utilisant un
+ lecteur d'écran. Il n'y a rien de cool !</p>
+            <p>Quand j'écris 𝗱𝘂 𝘁𝗲𝘅𝘁𝗲 𝗮𝘃𝗲𝗰 des caractères 
+𝓯𝓪𝓷𝓽𝓪𝓲𝓼𝓲𝓼𝓽𝓮𝓼, j'écris du texte 𝕥𝕠𝕥𝕒𝕝𝕖𝕞𝕖𝕟𝕥 
+𝖎𝖓𝖆𝖈𝖈𝖊𝖘𝖘𝖎𝖇𝖑𝖊, notamment, pour les personnes 
+𝐮𝐭𝐢𝐥𝐢𝐬𝐚𝐧𝐭 𝐮𝐧 𝐥𝐞𝐜𝐭𝐞𝐮𝐫 𝐝'é𝐜𝐫𝐚𝐧. 𝑰𝒍 𝒏'𝒚 𝒂 
+𝒓𝒊𝒆𝒏 𝒅𝒆 𝒄𝒐𝒐𝒍 !</p>
+        </section>
+
+        <section>
+            <h3 class="heading">Phrase en anglais</h3>
+            <p lang="en">When I write text with fancy characters, I 
+write text that is totally inaccessible, especially to people using a 
+screen reader. There's nothing cool about it!</p>
+            <p lang="en">When I write 𝘁𝗲𝘅𝘁 𝘄𝗶𝘁𝗵 𝓯𝓪𝓷𝓬𝔂 
+characters, I write text that is 𝕥𝕠𝕥𝕒𝕝𝕝𝕪 
+𝕚𝕟𝕒𝕔𝕔𝕖𝕤𝕤𝕚𝕓𝕝𝕖, especially to people 𝐮𝐬𝐢𝐧𝐠 𝐚 
+𝐬𝐜𝐫𝐞𝐞𝐧 𝐫𝐞𝐚𝐝𝐞𝐫. 𝙏𝙝𝙚𝙧𝙚'𝙨 𝙣𝙤𝙩𝙝𝙞𝙣𝙜 𝙘𝙤𝙤𝙡 
+𝙖𝙗𝙤𝙪𝙩 𝙞𝙩!</p>
+        </section>
+    </section>
+
+    <section>    
+        <h2 class="heading">Test 2 : l'abus d'émojis</h2>
+    
+        <p>Le saviez-vous ? Plus de 97% des pages d'accueil d'1 million 
+de sites web ont des anomalies d'accessibilité détectables 
+automatiquement !</p>
+        <p>Le saviez-vous ❓ 🤔 Plus de 9️⃣7️⃣% des pages d'🏡 d'1️⃣ 
+million de sites web ont des anomalies d'accessibilité détectables 
+automatiquement ❗❗❗ 😱</p>
+    </section>
+
+</body></html>
